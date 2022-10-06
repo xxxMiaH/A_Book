@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ABook - Giỏ Hàng</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row bg-secondary py-2 px-xl-5">
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark" href="">FAQs</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Hỗ Trợ</a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-dark pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center py-3 px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a href="" class="text-decoration-none">
+                    <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">A</span>Book</h1>
+                </a>
+            </div>
+            <div class="col-lg-6 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-6 text-right">
+                <a href="" class="btn border">
+                    <i class="fas fa-heart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="" class="btn border">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid">
+        <div class="row border-top px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 class="m-0">Thể Loại</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
+                </a>
+                <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 1;">
+                    <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">Giáo Dục <i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a href="" class="dropdown-item">Sách Giáo Khoa</a>
+                                <a href="" class="dropdown-item">Sách Bài Tập</a>
+                                <a href="" class="dropdown-item">Sách Tham Khảo</a>
+                            </div>
+                        </div>
+                        <a href="" class="nav-item nav-link">Văn Học</a>
+                        <a href="" class="nav-item nav-link">Tâm Lý Kỹ Năng</a>
+                        <a href="" class="nav-item nav-link">Kinh Tế</a>
+                        <a href="" class="nav-item nav-link">Ngoại Ngữ & Từ Điển</a>
+                        <a href="" class="nav-item nav-link">Thiếu Nhi</a>
+                        <a href="" class="nav-item nav-link">Truyện Tranh</a>
+                        <a href="" class="nav-item nav-link">Chính Trị & Xã Hội</a>
+                        <a href="" class="nav-item nav-link">Khoa Học & Công Nghệ</a>
+                        <a href="" class="nav-item nav-link">Gia Đình</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">A</span>Book</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active">Trang Chủ</a>
+                            <a href="shop.html" class="nav-item nav-link">Cửa Hàng</a>
+                            <a href="detail.html" class="nav-item nav-link">Chi Tiết Sản Phẩm</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Thanh Toán</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="cart.html" class="dropdown-item">Giỏ Hàng</a>
+                                    <a href="checkout.html" class="dropdown-item">Chi Tiết Thanh Toán</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Liên Hệ</a>
+                        </div>
+                        <div class="navbar-nav ml-auto py-0">
+                            <a href="" class="nav-item nav-link">Đăng Nhập</a>
+                            <a href="" class="nav-item nav-link">Đăng Ký</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-secondary mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
+            <h1 class="font-weight-semi-bold text-uppercase mb-3">Chi Tiết Sản Phẩm</h1>
+            <div class="d-inline-flex">
+                <p class="m-0"><a href="index.html">Trang Chủ</a></p>
+                <p class="m-0 px-2">-</p>
+                <p class="m-0">Chi Tiết Sản Phẩm</p>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Cart Start -->
+    <div class="container-fluid pt-5">
+        <div class="row px-xl-5">
+            <div class="col-lg-8 table-responsive mb-5">
+                <table class="table table-bordered text-center mb-0">
+                    <thead class="bg-secondary text-dark">
+                        <tr>
+                            <th>Các sản phẩm</th>
+                            <th>Giá bán</th>
+                            <th>Số lượng</th>
+                            <th>Tổng cộng</th>
+                            <th>Loại bỏ</th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle">
+                        <tr>
+                            <td class="align-middle"><img src="img/Sách Thiên Tài Bên Trái, Kẻ Điên Bên Phải.jpg" alt="" style="width: 50px;">Thiên Tài Bên Trái, Kẻ Điên Bên Phải</td>
+                            <td class="align-middle">141.410đ</td>
+                            <td class="align-middle">
+                                <div class="input-group quantity mx-auto" style="width: 100px;">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-minus" >
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control form-control-sm bg-secondary text-center" value="1">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-plus">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-middle">141.410đ</td>
+                            <td class="align-middle"><button class="btn btn-sm btn-primary"><i class="fa fa-times"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle"><img src="img/Nhà Giả Kim.jpg" alt="" style="width: 50px;">Nhà Giả Kim</td>
+                            <td class="align-middle">59.000đ</td>
+                            <td class="align-middle">
+                                <div class="input-group quantity mx-auto" style="width: 100px;">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-minus" >
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control form-control-sm bg-secondary text-center" value="1">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-plus">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-middle">59.000đ</td>
+                            <td class="align-middle"><button class="btn btn-sm btn-primary"><i class="fa fa-times"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle"><img src="img/Đắc Nhân Tâm.jpg" alt="" style="width: 50px;">Đắc Nhân Tâm</td>
+                            <td class="align-middle">55.000đ</td>
+                            <td class="align-middle">
+                                <div class="input-group quantity mx-auto" style="width: 100px;">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-minus" >
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control form-control-sm bg-secondary text-center" value="1">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-plus">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-middle">55.000đ</td>
+                            <td class="align-middle"><button class="btn btn-sm btn-primary"><i class="fa fa-times"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle"><img src="img/Tâm Lý Học Nghệ Thuật Giải Mã Hành Vi.jpg" alt="" style="width: 50px;">Tâm Lý Học Nghệ Thuật Giải Mã Hành Vi</td>
+                            <td class="align-middle">103.000đ</td>
+                            <td class="align-middle">
+                                <div class="input-group quantity mx-auto" style="width: 100px;">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-minus" >
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control form-control-sm bg-secondary text-center" value="1">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-plus">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-middle">103.000đ</td>
+                            <td class="align-middle"><button class="btn btn-sm btn-primary"><i class="fa fa-times"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle"><img src="img/Những Đêm Không Ngủ, Những Ngày Chậm Trôi.jpg" alt="" style="width: 50px;">Những Đêm Không Ngủ, Những Ngày Chậm Trôi</td>
+                            <td class="align-middle">60.000đ</td>
+                            <td class="align-middle">
+                                <div class="input-group quantity mx-auto" style="width: 100px;">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-minus" >
+                                        <i class="fa fa-minus"></i>
+                                        </button>
+                                    </div>
+                                    <input type="text" class="form-control form-control-sm bg-secondary text-center" value="1">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-sm btn-primary btn-plus">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="align-middle">60.000đ</td>
+                            <td class="align-middle"><button class="btn btn-sm btn-primary"><i class="fa fa-times"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-4">
+                <form class="mb-5" action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control p-4" placeholder="mã giảm giá">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary">Áp dụng phiếu giảm giá</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="card border-secondary mb-5">
+                    <div class="card-header bg-secondary border-0">
+                        <h4 class="font-weight-semi-bold m-0">Tóm tắt giỏ hàng</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between mb-3 pt-1">
+                            <h6 class="font-weight-medium">Tổng phụ</h6>
+                            <h6 class="font-weight-medium">418.000đ</h6>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-medium">Phí Vận Chuyển</h6>
+                            <h6 class="font-weight-medium">30.000đ</h6>
+                        </div>
+                    </div>
+                    <div class="card-footer border-secondary bg-transparent">
+                        <div class="d-flex justify-content-between mt-2">
+                            <h5 class="font-weight-bold">Tổng Tiền</h5>
+                            <h5 class="font-weight-bold">448.000đ</h5>
+                        </div>
+                        <button class="btn btn-block btn-primary my-3 py-3">Đặt Hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cart End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-dark mt-5 pt-5">
+        <div class="row px-xl-5 pt-5">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <a href="" class="text-decoration-none">
+                    <h1 class="mb-4 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border border-white px-3 mr-1">A</span>Book</h1>
+                </a>
+                <p>Chúng tôi mang đến cho bạn những đầu sách chất lượng và uy tín hàng đầu cả nước.</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Vĩnh Tuy, Hà Nội, Việt Nam</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>xxx.mah00.1@gmail.com</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>0582182628</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Đường dẫn</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Trang Chủ</a>
+                            <a class="text-dark mb-2" href="shop.html"><i class="fa fa-angle-right mr-2"></i>Cửa Hàng Của Chúng Tôi</a>
+                            <a class="text-dark mb-2" href="detail.html"><i class="fa fa-angle-right mr-2"></i>Chi Tiết Cửa Hàng</a>
+                            <a class="text-dark mb-2" href="cart.html"><i class="fa fa-angle-right mr-2"></i>Giỏ Hàng</a>
+                            <a class="text-dark mb-2" href="checkout.html"><i class="fa fa-angle-right mr-2"></i>Thanh Toán</a>
+                            <a class="text-dark" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Liên Hệ Với Chúng Tôi</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Tin Tức Mới Nhất</h5>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 py-4" placeholder="Tên Của Bạn" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0 py-4" placeholder="Email Của Bạn"
+                                    required="required" />
+                            </div>
+                            <div>
+                                <button class="btn btn-primary btn-block border-0 py-3" type="submit">Đăng Ký Ngay</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row border-top border-light mx-xl-5 py-4">
+            <div class="col-md-6 px-xl-0">
+                <p class="mb-md-0 text-center text-md-left text-dark">
+                    &copy; <a class="text-dark font-weight-semi-bold" href="#">Nguyễn Minh Anh - TH25.04</a>
+            
+                </p>
+            </div>
+            <div class="col-md-6 px-xl-0 text-center text-md-right">
+                <img class="img-fluid" src="img/payments.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Quảng Cáo -->
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        /* Button used to open the chat form - fixed at the bottom of the page */
+        .open-button {
+          background-color: #555;
+          color: white;
+          padding: 16px 20px;
+          border: none;
+          cursor: pointer;
+          opacity: 0.8;
+          position: fixed;
+          bottom: 23px;
+          right: 28px;
+          width: 280px;
+        }
+        
+        /* The popup chat - hidden by default */
+        .chat-popup {
+          display: none;
+          position: fixed;
+          bottom: 0;
+          right: 15px;
+          border: 3px solid #f1f1f1;
+          z-index: 9;
+        }
+        
+        /* Add styles to the form container */
+        .form-container {
+          max-width: 300px;
+          padding: 10px;
+          background-color: white;
+        }
+        
+        /* Full-width textarea */
+        .form-container textarea {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          border: none;
+          background: #f1f1f1;
+          resize: none;
+          min-height: 200px;
+        }
+        
+        /* When the textarea gets focus, do something */
+        .form-container textarea:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        /* Set a style for the submit/send button */
+        .form-container .btn {
+          background-color: #04AA6D;
+          color: white;
+          padding: 16px 20px;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          margin-bottom:10px;
+          opacity: 0.8;
+        }
+        
+        /* Add a red background color to the cancel button */
+        .form-container .cancel {
+          background-color: #D19C97;
+        }
+        
+        /* Add some hover effects to buttons */
+        .form-container .btn:hover, .open-button:hover {
+          opacity: 1;
+        }
+    </style>
+    </head>
+    <body> 
+        <button class="open-button" style = "z-index: 9;" onclick="openForm() ">Chat</button>
+        
+        <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+           
+        
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+        
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" style = "z-index: 999;" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+        
+        <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+        
+    
+        <style>
+            #mySidenav a {
+              position: absolute;
+              left: -40px;
+              transition: 0.3s;
+              padding: 15px;
+              width: 100px;
+              text-decoration: none;
+              font-size: 20px;
+              color: black;
+              border-radius: 0 5px 5px 0;
+              z-index: 10;
+              margin-top: 40px;
+            }
+            
+            #mySidenav a:hover {
+              left: 0;
+            }
+            
+            #about {
+              top: 20px;
+              background-color: #D19C97;
+            }
+            
+            #blog {
+              top: 80px;
+              background-color: #D19C97;
+            }
+            
+            #projects {
+              top: 140px;
+              background-color: #D19C97;
+            }
+            
+            #contact {
+              top: 200px;
+              background-color: #D19C97;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <div id="mySidenav" class="sidenav" style="position: fixed; z-index: 100;">
+              <a href="#" id="about">About</a>
+              <a href="#" id="blog">Blog</a>
+              <a href="#" id="projects">Projects</a>
+              <a href="#" id="contact">Contact</a>
+            </div>
+    <!-- Kết Thúc Quảng Cáo -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
